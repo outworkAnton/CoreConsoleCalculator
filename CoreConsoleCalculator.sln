@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreConsoleCalculator", "CoreConsoleCalculator\CoreConsoleCalculator.csproj", "{5C73BD0E-E4FB-49B3-BA03-968CCC5913A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressionExecutor", "ExpressionExecutor\ExpressionExecutor.csproj", "{1279B601-B6E1-4317-A7B9-580C690AB284}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5C73BD0E-E4FB-49B3-BA03-968CCC5913A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C73BD0E-E4FB-49B3-BA03-968CCC5913A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C73BD0E-E4FB-49B3-BA03-968CCC5913A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C73BD0E-E4FB-49B3-BA03-968CCC5913A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1279B601-B6E1-4317-A7B9-580C690AB284}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1279B601-B6E1-4317-A7B9-580C690AB284}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1279B601-B6E1-4317-A7B9-580C690AB284}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1279B601-B6E1-4317-A7B9-580C690AB284}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

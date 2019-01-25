@@ -6,7 +6,7 @@ namespace CoreConsoleCalculator
 {
     class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             var executor = ConfigureDI().Resolve<IMathExpressionExecutor>();
 
@@ -46,7 +46,7 @@ namespace CoreConsoleCalculator
             var builder = new ContainerBuilder();
 
             builder
-                .RegisterType<MathExpressionExecutor>()
+                .RegisterType<CustomExpressionExecutor>()
                 .As<IMathExpressionExecutor>();
 
             var container = builder.Build();

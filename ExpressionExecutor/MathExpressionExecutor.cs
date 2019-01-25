@@ -1,19 +1,19 @@
 using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Linq;
 
 namespace ExpressionExecutor
 {
-    public class MathExpressionExecutor : IMathExpressionExecutor
+    public abstract class MathExpressionExecutor : IMathExpressionExecutor
     {
-        private static readonly char[] mathOperators = {'+', '-', '*', '/', '(', ')'};
+        private static readonly char[] MathOperators = {'+', '-', '*', '/'};
 
         public string Execute(string exp)
         {
-            exp = ParseExpression(exp);
-            return new DataTable().Compute(exp, "").ToString();
+            return ExecuteImplementation(ParseExpression(exp));
         }
+
+        protected abstract string ExecuteImplementation(string expression);
 
         private static string ParseExpression(string exp)
         {
@@ -25,7 +25,7 @@ namespace ExpressionExecutor
                 {
                     element += c.ToString();
                 }
-                else if (mathOperators.Contains(c))
+                else if (MathOperators.Contains(c))
                 {
                     if (!string.IsNullOrWhiteSpace(element))
                     {
